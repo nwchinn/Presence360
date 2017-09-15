@@ -1,0 +1,162 @@
+html, body {
+	height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 10px;
+	color: white;
+
+
+
+	overflow-x: hidden !important;
+	margin: auto !important;
+
+}
+
+.backpano {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.overlay {
+	height: 100%;
+	width:100%;
+}
+
+.top {
+	height: 45%;
+	width: 100vw;
+	/*background-color: red;*/
+	
+}
+
+.bottom {	
+	height: 55%;
+	width: 100vw;
+	/*background-color: blue;*/
+	padding-top: 10%;
+}
+
+
+.logo {
+	padding-top: 20px;
+}
+
+.subtitle h1 {
+	color: #8ACFB7;
+	font-size:3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+.subtitle h2 {
+	color:white;
+	font-size: 2em;
+}
+
+.subtitle span {
+	font-size: .9em;
+}
+
+.drej {
+	height: 100%;
+	/*background-color:purple;*/
+}
+
+.drej img {
+	height: 100%
+}
+
+.contact h1 {
+	color: #8ACFB7;
+	font-size: 2.3em;
+	font-style: italic;
+	letter-spacing: 0px;
+	text-decoration: underline;
+}
+
+.contact h3 {
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+.vclogo img {
+	/*Needs to be changed per screen*/
+	padding-top: 40%;
+}
+
+/* Makes contact font bigger for phones Iphone 5 and larger */
+@media (min-width: 320px) { 
+	.contact h3 {font-size: 1.4em;}
+}
+
+/* Smartphones in Landscape mode */
+@media only screen 
+	and (min-width : 414px) 
+	and (max-width : 736px) 
+	and (orientation : landscape) {
+
+   	.logo {
+		padding-top: 0px;
+	}
+
+   	.drej {
+   		display: none;
+   	}
+
+   	.top {
+   		/*background-color: orange;*/
+   		height: 70%;
+   	}
+
+   	.bottom {
+   		padding-top: 0%;
+   		/*background-color: purple;*/
+   		height: 30%;
+   	}
+
+   	.side {
+   		/*background-color: yellow;*/
+   		width: 100%;
+   	}
+
+   	.contact { 
+   		width: 50%; 
+   		font-size: 1.1em;
+   		/*background-color: blue;*/
+   	}
+
+   	.vclogo {
+   		width: 50%;
+   		/*background-color: red;*/
+   	}
+
+   	.vclogo img {
+   		padding-top: 0%;
+   		width: 80%
+   	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	body{font-size: 20px;}
+
+
+	.vclogo img {padding-top: 20%;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+	.vclogo img {padding-top: 5%;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.bottom {padding-top: 0%;}
+
+	.vclogo img {padding-top: 10%;}
+}

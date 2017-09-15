@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="description" content="Presence360 provides Virtual Reality Consulting services and 360&deg; Photography services with the goal of bringing your business into the digital age. Our products include Virtual Compass Tours, 360 Facebook Photography, and custom virtual tours adapted to showing your business in the best possible digital light.">
+		<meta name="author" content="Nick Chinn">
+		<link rel="shortcut icon" href="img/ico/favicon.ico">
+		<title>Presence360 - VR Consulting, Virtual Tours, 360&deg; Photography</title>
+
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+   </head>
+
+  <body>
+      	<script src="pano/scienceCenter.js"></script>
+
+      	<!-- Landing Page
+         ========================================================================= --> 
+        
+        <div class="backpano">
+        	<!-- <img src="img/bowriver.jpg" class="img-responsive" alt="Bow River" style="width:100%;height:100%;"> -->
+
+        	
+
+        	<div id="pano" style="width:100%; height:100%;"></div>
+
+        	<script>
+           
+           		embedpano({swf:"pano/scienceCenter.swf", xml:"pano/scienceCenter.xml", target:"pano", mwheel:false});
+           
+        	</script>
+
+       	</div>
+
+
+        <div class="container-fluid overlay">
+
+        	<div class="row top heading" style="">
+        		<div class="col-xs-12 logo">
+        			<img src="img/logo/p360logo.png" class="img-responsive center-block" alt="Presence Logo">
+        		</div>
+
+        		<div class="col-xs-12 text-center subtitle" >
+        		    <h1>Virtual Reality<br><span>Consulting</span></h1>
+        			<h2>Showcase Solutions for the Web</h2>
+        		</div>
+        	</div>
+
+        	<div class="row bottom">
+				<div class="col-xs-6 drej" style="">
+						<img src="img/andrej.png" class="img-responsive center-block" alt="Drej VR" >
+				</div>
+
+    			<div class="col-xs-6 side" style="">
+    				<div class="col-xs-12 text-center contact" style="">
+    					<h1>CONTACT</h1>
+    					<h3>matt@presence360.io</h3>
+    				</div>
+    				<div class="col-xs-12 vclogo" style="">
+						<a href="https://www.virtualcompass.com/beta/vtourz/ursuline.aspx?MainFolder=6228371a&TourFolder=Ursuline%20College_6e989f0e&FileName=Ursuline%20College#"><img src="img/vcbanner.png" class="img-responsive center-block" style="" alt="Virtual Compass Tour"></a>
+					</div>
+    			</div>
+    		</div>
+
+        </div>     
+
+
+        
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>
